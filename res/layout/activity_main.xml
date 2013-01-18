@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="10dip" >
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_world" />
+
+  <com.blundell.tutorial.ui.widget.ValidationEditText
+    android:id="@+id/main_et_email_address"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/main_et_hint_email_address"
+    android:imeOptions="actionDone"
+    android:inputType="textEmailAddress"
+    android:singleLine="true" />
+
+  <Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onDoneClicked"
+    android:text="@string/main_btn_done" />
+
+</LinearLayout>
